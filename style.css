@@ -1,0 +1,121 @@
+:root {
+  --themeInpAcitveColor: hsl(0, 0%, 100%);
+  --themeEqAcitveColor: hsl(6, 52.8%, 58.4%);
+  --themeDelAndResAcitveColor: hsl(226, 23%, 65%);
+  /* theme1 */
+  --themeInpColor: hsl(30, 25%, 89%);
+  --themeEqColor: hsl(6, 63%, 50%);
+  --themeDelAndResColor: hsl(225, 21%, 49%);
+  /* theme2 */
+  --themeTwoInpColor: hsl(281, 77%, 36%);
+  --themeTwoEqColor: hsl(176, 98%, 51%);
+  --themeTwoDelAndResColor: hsl(281, 83%, 41%);
+  /* theme3 */
+  --themeThreeInpColor: hsl(281, 77%, 36%);
+  --themeThreeEqColor: hsl(176, 98%, 51%);
+  --themeThreeDelAndResColor: hsl(281, 83%, 41%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "League Spartan", sans-serif;
+}
+.toggle {
+  background-color: hsl(223, 31%, 20%);
+  height: 15px;
+  width: 45px;
+  border-radius: 10px;
+
+  position: relative;
+}
+.toggle span {
+  background-color: hsl(6, 63%, 50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+}
+.numbers span:not(span:last-of-type) {
+  margin-right: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(30, 25%, 89%);
+}
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.calc {
+  width: 300px;
+  margin: 50px auto;
+}
+.screen {
+  background-color: hsl(224, 36%, 15%);
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: hsl(30, 25%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0 15px;
+}
+.inputs {
+  font-size: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  background-color: hsl(223, 31%, 20%);
+  padding: 10px;
+  border-radius: 5px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "sev eig nin del" "fou fiv six plus" "one two thr min" "dot zer divide mult" "res res eq eq";
+}
+.inputs .res,
+.inputs .del {
+  background-color: var(--themeDelAndResColor);
+  color: hsl(30, 25%, 89%);
+  box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
+}
+.inputs .eq {
+  background-color: var(--themeEqColor);
+  color: hsl(30, 25%, 9%);
+  box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
+}
+.inputs div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(223, 31%, 20%);
+  font-weight: bold;
+  background-color: var(--themeInpColor);
+  border-radius: 5px;
+  padding: 10px 5px;
+  box-shadow: 0px 3px 0px 0px hsl(28, 16%, 65%);
+}
+
+.inputs .eq:active {
+  background-color: var(--themeEqAcitveColor);
+}
+.inputs div:active {
+  background-color: var(--themeInpAcitveColor);
+}
+.inputs .del:active,
+.inputs.res:active {
+  background-color: var(--themeDelAndResAcitveColor);
+}
