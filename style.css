@@ -2,18 +2,11 @@
   --themeInpAcitveColor: hsl(0, 0%, 100%);
   --themeEqAcitveColor: hsl(6, 52.8%, 58.4%);
   --themeDelAndResAcitveColor: hsl(226, 23%, 65%);
-  /* theme1 */
+  /*  */
   --themeInpColor: hsl(30, 25%, 89%);
   --themeEqColor: hsl(6, 63%, 50%);
   --themeDelAndResColor: hsl(225, 21%, 49%);
-  /* theme2 */
-  --themeTwoInpColor: hsl(281, 77%, 36%);
-  --themeTwoEqColor: hsl(176, 98%, 51%);
-  --themeTwoDelAndResColor: hsl(281, 83%, 41%);
-  /* theme3 */
-  --themeThreeInpColor: hsl(281, 77%, 36%);
-  --themeThreeEqColor: hsl(176, 98%, 51%);
-  --themeThreeDelAndResColor: hsl(281, 83%, 41%);
+  /*  */
 }
 
 .attribution {
@@ -21,7 +14,7 @@
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--themeEqColor);
 }
 body {
   background-color: hsl(222, 26%, 31%);

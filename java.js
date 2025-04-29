@@ -63,6 +63,8 @@ toggle.onclick = function () {
   toggle.firstChild.style.left = `${left}px`;
   //theme 1
   if (count == 3) {
+    document.querySelector(".attribution").style.color = "black";
+
     inp.forEach(
       (el) =>
         (el.style.cssText +=
@@ -86,6 +88,8 @@ toggle.onclick = function () {
   }
   //theme 2
   if (count == 1) {
+    document.querySelector(".attribution").style.color = "black";
+
     inp.forEach(
       (el) =>
         (el.style.cssText +=
@@ -109,6 +113,7 @@ toggle.onclick = function () {
   }
   //theme 3
   if (count == 2) {
+    document.querySelector(".attribution").style.color = "white";
     inp.forEach(
       (el) =>
         (el.style.cssText +=
